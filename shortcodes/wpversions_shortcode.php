@@ -19,7 +19,7 @@ function wp_versions($atts){
 
     } elseif ( $parameters['type'] == 'mine' ) {
 
-        return type_mine();
+        return type_mine( $parameters['color'] );
 
     } elseif ( $parameters['type'] == 'subversion' && ! empty( $parameters['version'] ) ) {
 

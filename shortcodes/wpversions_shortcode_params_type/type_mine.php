@@ -2,14 +2,14 @@
 
 require_once( ABSPATH . 'wp-content/plugins/v-wp/shortcodes/wpversions_shortcode_params_type/helper.php' );
 
-function type_mine( string $atts_color, string $atts_version ): string {
+function type_mine( string $atts_color ): string {
 
     $maj_release = get_maj_release();
 
     $version = get_bloginfo( 'version' );
     $latest_version = get_transient( 'wp_versions' )[0]['latest'];
 
-    $position = array_search( substr($atts_version, 0, 3), $maj_release );
+    $position = array_search( substr($version, 0, 3), $maj_release );
 
     $is_eol = get_transient( 'wp_versions' )[$position]['eol'];
 
