@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WordPress Versions
-Plugin URI: Lien GIT*
+Plugin URI: https://github.com/razakadegoke/wpversion_plugin
 Description: Allows you to display the different versions of WordPress.
 Version: 1.0.0
 Author: SatelliteWP
